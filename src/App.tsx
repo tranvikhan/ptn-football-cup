@@ -46,7 +46,7 @@ export const App = () => {
           {clubs.map((club) => (
             <div
               key={club.id}
-              className="bg-white flex flex-col items-center p-8 rounded-lg shadow-2xl"
+              className="bg-white bg-opacity-70 backdrop-blur-md border-white border flex flex-col items-center p-8 rounded-lg shadow-2xl"
             >
               <img src={club.logo} className={"w-20 h-20"} />
               <h2 className="text-gray-600 font-rajdhani font-[600] text-xl">
@@ -82,7 +82,7 @@ export const App = () => {
               {match.team.map((team, index) => (
                 <div
                   key={team.id}
-                  className="flex flex-row relative items-center bg-white px-4 lg:px-8 py-2 gap-2 lg:gap-4 rounded-lg shadow-2xl"
+                  className="flex flex-row relative items-center bg-white bg-opacity-70 backdrop-blur-md border-white border px-4 lg:px-8 py-2 gap-2 lg:gap-4 rounded-lg shadow-2xl"
                 >
                   <img
                     src={team.logo}
