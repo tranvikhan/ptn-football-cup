@@ -3,7 +3,7 @@ export const clubs = [
     id: "g1",
     name: "XUBMARINE",
     desc: "X + Submarine",
-    logo: "/img/xubmarine.png",
+    logo: "/img/xubmarine-logo.png",
     vote: 0,
     player: [
       {
@@ -47,7 +47,7 @@ export const clubs = [
     id: "g2",
     name: "MINIOPS",
     desc: "Minion + Devops + Goalkeeper",
-    logo: "/img/miniops.png",
+    logo: "/img/miniops-logo.png",
     vote: 0,
     player: [
       {
@@ -96,7 +96,7 @@ export const clubs = [
     id: "g3",
     name: "POLYLOTUS",
     desc: "Polygram + Lotus",
-    logo: "/img/polylotus.png",
+    logo: "/img/polylotus-logo.png",
     vote: 0,
     player: [
       {

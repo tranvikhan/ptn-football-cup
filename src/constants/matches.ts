@@ -4,11 +4,11 @@ export const matches = [
     date: "2023-04-13T11:00:00.00Z",
     note: "First leg",
     team: [
-      { id: "g3", name: "POLYLOTUS", logo: "/img/polylotus.png" },
+      { id: "g3", name: "POLYLOTUS", logo: "/img/polylotus-logo.png" },
       {
         id: "g2",
         name: "MINIOPS",
-        logo: "/img/miniops.png",
+        logo: "/img/miniops-logo.png",
       },
     ],
   },
@@ -20,9 +20,9 @@ export const matches = [
       {
         id: "g1",
         name: "XUBMARINE",
-        logo: "/img/xubmarine.png",
+        logo: "/img/xubmarine-logo.png",
       },
-      { id: "g3", name: "POLYLOTUS", logo: "/img/polylotus.png" },
+      { id: "g3", name: "POLYLOTUS", logo: "/img/polylotus-logo.png" },
     ],
   },
   {
@@ -33,12 +33,12 @@ export const matches = [
       {
         id: "g1",
         name: "XUBMARINE",
-        logo: "/img/xubmarine.png",
+        logo: "/img/xubmarine-logo.png",
       },
       {
         id: "g2",
         name: "MINIOPS",
-        logo: "/img/miniops.png",
+        logo: "/img/miniops-logo.png",
       },
     ],
   },
@@ -50,9 +50,9 @@ export const matches = [
       {
         id: "g2",
         name: "MINIOPS",
-        logo: "/img/miniops.png",
+        logo: "/img/miniops-logo.png",
       },
-      { id: "g3", name: "POLYLOTUS", logo: "/img/polylotus.png" },
+      { id: "g3", name: "POLYLOTUS", logo: "/img/polylotus-logo.png" },
     ],
   },
   {
@@ -60,11 +60,11 @@ export const matches = [
     date: "2023-04-13T11:00:00.00Z",
     note: "Second leg",
     team: [
-      { id: "g3", name: "POLYLOTUS", logo: "/img/polylotus.png" },
+      { id: "g3", name: "POLYLOTUS", logo: "/img/polylotus-logo.png" },
       {
         id: "g1",
         name: "XUBMARINE",
-        logo: "/img/xubmarine.png",
+        logo: "/img/xubmarine-logo.png",
       },
     ],
   },
@@ -76,12 +76,12 @@ export const matches = [
       {
         id: "g2",
         name: "MINIOPS",
-        logo: "/img/miniops.png",
+        logo: "/img/miniops-logo.png",
       },
       {
         id: "g1",
         name: "XUBMARINE",
-        logo: "/img/xubmarine.png",
+        logo: "/img/xubmarine-logo.png",
       },
     ],
   },
