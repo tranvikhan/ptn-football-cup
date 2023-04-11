@@ -34,7 +34,7 @@ interface NumberCardProps {
 const NumberCard = ({ num, text }: NumberCardProps) => {
   const textRender = useMemo(() => (num > 1 ? `${text}S` : text), [num]);
   return (
-    <div className="flex flex-col justify-center items-center text-white bg-gray-800 w-16 lg:w-20 h-16 lg:h-20 rounded-lg">
+    <div className="flex flex-col justify-center items-center text-white bg-gray-800 w-16 lg:w-20 h-16 lg:h-20 rounded-lg shadow-2xl">
       <h2 className="text-xl lg:text-2xl font-orbitron">{formatClock(num)}</h2>
       <h3 className="font-light text-[10px] lg:text-xs uppercase">
         {textRender}
