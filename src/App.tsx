@@ -8,7 +8,7 @@ import { setupConfig } from "./constants/setup";
 export const App = () => {
   const startDate = new Date(setupConfig.date);
   return (
-    <div className="bg-blue-950 bg-stadium bg-cover bg-center bg-no-repeat overflow-y-auto max-h-screen">
+    <div className="bg-blue-300 bg-stadium bg-cover bg-center bg-no-repeat overflow-y-auto max-h-screen">
       <div className="flex flex-col items-center">
         <section className="min-h-screen flex flex-col items-center py-16 px-4 gap-16">
           <div className="flex flex-col items-center">
