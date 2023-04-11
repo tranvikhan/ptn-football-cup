@@ -9,7 +9,6 @@ export const App = () => {
   const startDate = new Date(setupConfig.date);
   return (
     <>
-      {" "}
       <div className="bg-blue-950 bg-stadium bg-cover bg-center bg-no-repeat overflow-auto">
         <div className="flex flex-col items-center">
           <section className="min-h-screen flex flex-col items-center justify-center py-6 px-4 gap-16">
