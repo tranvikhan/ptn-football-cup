@@ -82,7 +82,7 @@ export const App = () => {
               {match.team.map((team, index) => (
                 <div
                   key={team.id}
-                  className="flex flex-row relative items-center bg-white px-4 lg:px-8 py-2 gap-4 rounded-lg shadow-2xl"
+                  className="flex flex-row relative items-center bg-white px-4 lg:px-8 py-2 gap-2 lg:gap-4 rounded-lg shadow-2xl"
                 >
                   <img
                     src={team.logo}
