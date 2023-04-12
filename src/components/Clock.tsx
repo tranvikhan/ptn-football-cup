@@ -19,10 +19,10 @@ export const Clock = ({
     );
   return (
     <div className="flex flex-row items-stretch gap-4 lg:gap-8">
-      {<NumberCard num={days} text={"day"} />}
-      <NumberCard num={hours} text={"hour"} />
-      <NumberCard num={minutes} text={"minute"} />
-      <NumberCard num={seconds} text={"second"} />
+      <NumberCard num={days} text={"day"} hiddenZero />
+      <NumberCard num={hours} text={"hour"} hiddenZero={!days} />
+      <NumberCard num={minutes} text={"minute"} hiddenZero={!hours} />
+      <NumberCard num={seconds} text={"second"} hiddenZero={!minutes} />
     </div>
   );
 };
@@ -30,10 +30,11 @@ export const Clock = ({
 interface NumberCardProps {
   num: number;
   text: string;
+  hiddenZero?: boolean;
 }
-const NumberCard = ({ num, text }: NumberCardProps) => {
+const NumberCard = ({ num, text, hiddenZero = true }: NumberCardProps) => {
   const textRender = useMemo(() => (num > 1 ? `${text}S` : text), [num]);
-  if (!num) return null;
+  if (!num && hiddenZero) return null;
   return (
     <div className="flex flex-col justify-center items-center text-white bg-gray-900 bg-opacity-80 backdrop-blur-md border-gray-900 border w-16 lg:w-20 h-16 lg:h-20 rounded-lg shadow-2xl">
       <h2 className="text-xl lg:text-2xl font-orbitron">{formatClock(num)}</h2>
