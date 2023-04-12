@@ -19,10 +19,10 @@ export const Clock = ({
     );
   return (
     <div className="flex flex-row items-stretch gap-4 lg:gap-8">
-      {days && <NumberCard num={days} text={"day"} />}
-      {hours && <NumberCard num={hours} text={"hour"} />}
-      {minutes && <NumberCard num={minutes} text={"minute"} />}
-      {seconds && <NumberCard num={seconds} text={"second"} />}
+      {<NumberCard num={days} text={"day"} />}
+      <NumberCard num={hours} text={"hour"} />
+      <NumberCard num={minutes} text={"minute"} />
+      <NumberCard num={seconds} text={"second"} />
     </div>
   );
 };
@@ -33,6 +33,7 @@ interface NumberCardProps {
 }
 const NumberCard = ({ num, text }: NumberCardProps) => {
   const textRender = useMemo(() => (num > 1 ? `${text}S` : text), [num]);
+  if (!num) return null;
   return (
     <div className="flex flex-col justify-center items-center text-white bg-gray-900 bg-opacity-80 backdrop-blur-md border-gray-900 border w-16 lg:w-20 h-16 lg:h-20 rounded-lg shadow-2xl">
       <h2 className="text-xl lg:text-2xl font-orbitron">{formatClock(num)}</h2>
