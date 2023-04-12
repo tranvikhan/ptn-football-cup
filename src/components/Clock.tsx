@@ -19,10 +19,10 @@ export const Clock = ({
     );
   return (
     <div className="flex flex-row items-stretch gap-4 lg:gap-8">
-      <NumberCard num={days} text={"day"} />
-      <NumberCard num={hours} text={"hour"} />
-      <NumberCard num={minutes} text={"minute"} />
-      <NumberCard num={seconds} text={"second"} />
+      {days && <NumberCard num={days} text={"day"} />}
+      {hours && <NumberCard num={hours} text={"hour"} />}
+      {minutes && <NumberCard num={minutes} text={"minute"} />}
+      {seconds && <NumberCard num={seconds} text={"second"} />}
     </div>
   );
 };
