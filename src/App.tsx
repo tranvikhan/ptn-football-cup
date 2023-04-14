@@ -10,7 +10,7 @@ export const App = () => {
   const startDate = new Date(setupConfig.date);
   return (
     <div className="bg-blue-300 bg-stadium bg-cover bg-center bg-no-repeat overflow-y-auto h-screen flex flex-col items-stretch justify-start">
-      <section className="lg:min-h-screen flex flex-col items-center py-20 px-4 gap-16">
+      <section className="flex flex-col items-center py-12 px-4 gap-16">
         <div className="flex flex-col items-center">
           <img
             src={"/img/ptn.png"}
@@ -21,7 +21,7 @@ export const App = () => {
             Football Cup 2023
           </h2>
         </div>
-        <div className="flex flex-col items-center gap-2 mb-16">
+        <div className="flex flex-col items-center gap-2">
           <h3 className="text-gray-700 text-base lg:text-xl font-rajdhani font-[600] flex flex-row items-center">
             <HiClock className="-mt-1" />
             {`${format(startDate, "HH")}h ${format(startDate, "dd/MM/yyyy")}`}

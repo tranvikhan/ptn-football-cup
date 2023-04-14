@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { CountdownRenderProps } from "react-countdown";
 import { formatClock } from "../utils/format";
-import { IoIosFootball } from "react-icons/io";
+import { Ranking } from "./Ranking";
 
 export const Clock = ({
   days,
@@ -10,15 +10,9 @@ export const Clock = ({
   seconds,
   completed,
 }: CountdownRenderProps) => {
-  if (completed)
-    return (
-      <div className="flex flex-col items-center text-white bg-gray-800 py-4 px-6 rounded-lg">
-        <h2 className="text-3xl font-orbitron"> GAME STARTED</h2>
-        <IoIosFootball className="text-5xl animate-spin" />
-      </div>
-    );
+  if (completed) return <Ranking />;
   return (
-    <div className="flex flex-row items-stretch gap-4 lg:gap-8">
+    <div className="flex flex-row items-stretch gap-4 lg:gap-8 mt-16">
       <NumberCard num={days} text={"day"} hiddenZero />
       <NumberCard num={hours} text={"hour"} hiddenZero={!days} />
       <NumberCard num={minutes} text={"minute"} hiddenZero={!hours} />
